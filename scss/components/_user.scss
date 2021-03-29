@@ -1,0 +1,79 @@
+.user{
+    margin-bottom: 20px;
+    &__profile-details{
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 32px;
+    }
+    &__avatar{
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        @media (min-width: $medium) {
+            flex: 0 0 120px;
+            max-width: 120px;
+            height: 120px;
+            margin-right: 25px;
+        }
+        @media (max-width: $medium) {
+            flex: 0 0 60px;
+            max-width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+    }
+    &__info{
+        position: relative;
+        @media (min-width: $medium) {
+            flex: 0 0 calc(100% - 145px);
+            max-width: calc(100% - 145px);
+            padding-right: 45px;
+        }
+        @media (max-width: $medium) {
+            flex: 0 0 calc(100% - 75px);
+            max-width: calc(100% - 75px);
+            padding-right: 25px;
+        }
+    }
+    &__menu{
+        position: absolute;
+        top: 0;
+        @media (min-width: $medium) {
+            right: 10px;
+        }
+        @media (max-width: $medium) {
+            right: 0;
+        }
+    }
+    &__panel{
+        top: 37px;
+    }
+    &__btn{
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+    }
+    &__name{
+        margin-bottom: 8px;
+        overflow: hidden;
+    }
+    &__nickname{
+        letter-spacing: -0.5px;
+        margin-bottom: 16px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    &__description{
+        p{
+            margin-top: 0;
+        }
+    }
+}

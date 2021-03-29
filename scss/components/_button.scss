@@ -1,0 +1,31 @@
+.button-plus{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: $orange-red-gradient;
+    margin-bottom: -32px;
+    @include transition(all .3s);
+    @include on-event {
+        opacity: 0.8;
+    }
+    @media (max-width: $medium){
+        display: none;
+    }
+}
+.edit-button{
+    padding-left: 26px;
+    position: relative;
+    display: block;
+    text-decoration: underline;
+    .icon{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    @include on-event {
+        text-decoration: none;
+        color: $red-color;
+    }
+}

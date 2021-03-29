@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+	<meta name="theme-color" content="#ffffff">
+	<title>User Profile</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__top row row_center">
+				<div class="logo">
+					<a class="logo__link" href="#">
+						<img class="logo__img" src="img/logo/logo.svg" alt="synth">
+					</a>
+				</div>
+				<div class="header__right row row_center">
+					<div class="header__user header-user dropdown">
+						<div class="header-user__dropdown dropdown__toogle">
+							<div class="header-user__name">
+								Arthur Wood
+							</div>
+							<div class="header-user__img">
+								<img src="img/pages/user-profile/user__img.png" alt="">
+							</div>
+							<div class="header-user__icon">
+								<i class="icon icon_arrow"></i>
+							</div>
+						</div>
+						<div class="dropdown__panel panel">
+							<ul class="dropdown__list">
+								<li class="dropdown__item">
+									<a class="dropdown__link" href="#">
+										logout
+									</a>
+								</li>
+								<li class="dropdown__item">
+									<a class="dropdown__link" href="#">
+										lorem
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-icons">
+						<ul class="menu-icons__list">
+							<li class="menu-icons__item">
+								<a class="menu-icons__link" href="#">
+									<i class="icon icon_notifications"></i>
+								</a>
+							</li>
+							<li class="menu-icons__item">
+								<a class="menu-icons__link" href="#">
+									<i class="icon icon_share-recap"></i>
+								</a>
+							</li>
+							<li class="menu-icons__item">
+								<a class="menu-icons__link" href="#">
+									<i class="icon icon_medium"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom row row_center">
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item menu__item_active">
+							<a class="menu__link" href="#">FEED</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">EXPLORE</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">DISCUSSIONS</a>
+						</li>
+					</ul>
+				</nav>
+				<button class="button-plus">
+					<i class="plus-icon"></i>
+				</button>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="user-profile">
+			<div class="container">
+				<div class="row">
+					<div class="user">
+						<div class="user__profile-details">
+							<div class="user__avatar">
+								<img src="img/pages/user-profile/avatar.png" alt="">
+							</div>
+							<div class="user__info">
+								<div class="user__menu dropdown">
+									<button class="user__btn dropdown__toogle">
+										<i class="icon icon_menu"></i>
+									</button>
+									<div class="user__panel dropdown__panel panel">
+										<ul class="dropdown__list">
+											<li class="dropdown__item">
+												<a class="dropdown__link" href="#">
+													<i class="icon icon_report"></i>
+													Report User
+												</a>
+											</li>
+											<li class="dropdown__item">
+												<a class="dropdown__link" href="#">
+													<i class="icon icon_delete"></i>
+													Block User
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="user__name">
+									Benjamin Clementine
+								</div>
+								<div class="user__nickname">
+									@benclementine
+								</div>
+								<a class="edit-button" href="#">
+									<i class="icon icon_edit"></i>
+									<span class="edit-button__text">Edit Profile</span>
+								</a>
+							</div>
+						</div>
+						<div class="user__followers followers">
+							<div class="followers__item">
+								<strong class="followers__title">
+									45
+								</strong>
+								<span class="followers__description">
+									synths
+								</span>
+							</div>
+							<div class="followers__item">
+								<strong class="followers__title">
+									110
+								</strong>
+								<span class="followers__description">
+									followers
+								</span>
+							</div>
+							<div class="followers__item">
+								<strong class="followers__title">
+									322
+								</strong>
+								<span class="followers__description">
+									following
+								</span>
+							</div>
+						</div>
+						<div class="user__description">
+							<p>
+								Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each, according to CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and Ethereum.
+							</p>
+						</div>
+					</div>
+					<div class="user-post">
+						<div class="switcher">
+							<label class="switcher__description" for="switcher__privacy">
+								Public
+							</label>
+							<div class="switcher__input-box">
+								<input class="switcher__input" type="checkbox" id="switcher__privacy" checked>
+								<label class="switcher__label" for="switcher__privacy"></label>
+							</div>
+							<label class="switcher__description" for="switcher__privacy">
+								Private
+							</label>
+						</div>
+						<div class="post">
+							<div class="post__block panel">
+								<div class="post__body">
+									<a class="post__link" href="#">
+										New air routes that promise cheap flights in
+									</a>
+								</div>
+								<div class="post__footer">
+									<div class="post__creator creator">
+										<div class="creator__img">
+										</div>
+										<div class="creator__full-name">
+											Gregory Watkins
+										</div>
+									</div>
+									<div class="post__button">
+										<a href="#" class="post__share-link danger_text">Share</a>
+									</div>
+								</div>
+							</div>
+							<div class="post__block panel">
+								<div class="post__body">
+									<a class="post__link" href="#">
+										New air routes that promise cheap flights in
+									</a>
+								</div>
+								<div class="post__footer">
+									<div class="post__creator creator">
+										<div class="creator__img">
+										</div>
+										<div class="creator__full-name">
+											Gregory Watkins
+										</div>
+									</div>
+									<div class="post__button">
+										<a href="#" class="post__share-link danger_text">Share</a>
+									</div>
+								</div>
+							</div>
+							<div class="post__block panel">
+								<div class="post__header">
+									<span class="post__sub-link">
+										<span class="post__sub-description">Shared to</span>
+										<a class="post__sub-hashtag" href="#" >
+											#discussionaboutanimonaboutanimonaboutanimgttdds
+										</a>
+									</span>
+								</div>
+								<div class="post__body">
+									<a class="post__link" href="#">
+										New air routes that promise cheap flights in
+									</a>
+								</div>
+								<div class="post__footer">
+									<div class="post__creator creator">
+										<div class="creator__img">
+										</div>
+										<div class="creator__full-name">
+											Gregory Watkins
+										</div>
+									</div>
+									<div class="post__info-renderer renderer">
+										<ul class="renderer__list">
+											<li class="renderer__item">
+												<i class="icon icon_play"></i>
+												88
+											</li>
+											<li class="renderer__item">
+												<i class="icon icon_like"></i>
+												24
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="post__block panel">
+								<div class="post__header">
+									<a class="post__sub-link" href="#">
+										<i class="icon icon_shared"></i>
+										Shared via weblink
+									</a>
+								</div>
+								<div class="post__body">
+									<a class="post__link" href="#">
+										New air routes that promise cheap flights in
+									</a>
+								</div>
+								<div class="post__footer">
+									<div class="post__creator creator">
+										<div class="creator__img">
+											<img src="img/pages/user-profile/user__img.png" alt="">
+										</div>
+										<div class="creator__full-name">
+											Gregory Watkins
+										</div>
+									</div>
+									<div class="post__info-renderer renderer">
+										<ul class="renderer__list">
+											<li class="renderer__item">
+												<i class="icon icon_play"></i>
+												88
+											</li>
+											<li class="renderer__item">
+												<i class="icon icon_like"></i>
+												24
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

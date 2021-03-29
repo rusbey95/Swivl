@@ -1,0 +1,14 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header{
+    background: $white;
+    box-shadow: $shadow;
+    margin-bottom: 72px;
+    @media (min-width: $medium){
+        margin-bottom: 72px;
+    }
+    @media (max-width: $medium){
+        margin-bottom: 32px;
+    }
+}

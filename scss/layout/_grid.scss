@@ -1,0 +1,11 @@
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &_center{
+        align-items: center;
+    }
+    &_margin{
+        margin: 0 -15px;
+    }
+}

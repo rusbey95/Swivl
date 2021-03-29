@@ -1,0 +1,43 @@
+.dropdown{
+    position: relative;
+    &__toogle{
+        cursor: pointer;
+        @include transition(all .3s);
+        @include on-event {
+            opacity: 0.8;
+        }
+        &.active{
+            opacity: 0.8;
+            + .dropdown__panel{
+                display: block;
+                opacity: 1;
+                visibility: visible;
+            } 
+        }
+    }
+    &__panel{
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all .3s);
+        padding: 24px 0;
+        position: absolute;
+        width: 176px;
+        z-index: 1;
+        @media (max-width: $medium){
+            right: 0;
+        }
+    }
+    &__link{
+        display: block;
+        padding: 8px 10px 8px 24px;
+        color: $text-color;
+        display: flex;
+        align-items: center;
+        @include on-event {
+            background: $mid-grey;
+        }
+        .icon{
+            margin-right: 16px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.followers{
+    display: flex;
+    flex-wrap: nowrap;
+    &__item{
+        flex: 0 0 auto;
+        max-width: 40%;
+        padding: 0 48px 0 0;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    &__title{
+        display: block;
+    }
+    @media (max-width: $medium){
+        justify-content: center;
+        &__item{
+            padding: 0 14px;
+        }
+    }
+}

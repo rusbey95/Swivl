@@ -1,0 +1,32 @@
+/// Regular font family
+$text-font-open-sans: 'Open Sans', sans-serif;
+$text-font-montserrat: 'Montserrat', sans-serif;
+
+
+/// Color
+$text-color: #3E4056;
+$red-color: #F05D63;
+$grey: #ECF1F8;
+$light-grey: #F7F9FC;
+$mid-grey: #F3F6FA;
+$dark-grey: #B2B3BB;
+$white: #fff;
+$opacity-white-color: rgba(255,255,255,0.8);
+
+
+// Gradient
+$orange-red-gradient: linear-gradient(135deg, #FF974F 0%, #E32C75 100%);
+
+
+// Block's shadow
+$shadow: 0px 12px 12px rgba(0, 0, 0, 0.06);
+
+
+/// Container's maximum width
+$max-width: 1200px;
+
+
+/// Breakpoints map
+$small: 320px;
+$medium: 768px;
+$large: 1024px;

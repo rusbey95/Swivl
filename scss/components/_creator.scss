@@ -1,0 +1,18 @@
+.creator{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    &__img{
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: $dark-grey;
+        margin-right: 8px; 
+    }
+    &__full-name{
+        max-width: 120px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}

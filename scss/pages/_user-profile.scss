@@ -1,0 +1,18 @@
+@media (min-width: $medium){
+    .user{
+        flex: 0 0 350px;
+        max-width: 350px;
+        margin-right: 47px;
+    }
+    .user-post{
+        flex: 0 0 calc(100% - 397px);
+        max-width: calc(100% - 397px);
+    }
+}
+@media (max-width: $medium){
+    .user,
+    .user-post{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

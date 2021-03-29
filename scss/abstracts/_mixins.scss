@@ -1,0 +1,45 @@
+//btn and link
+@mixin on-event($self: false) {
+	@if $self {
+		&,
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	} @else {
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	}
+}
+
+
+//font-size and line height
+@function calculateRem($font-size) {
+	$remSize: $font-size / 16;
+	@return $remSize * 1rem;
+}
+
+@mixin font-size($font-size, $line-height: normal) {
+	font-size: calculateRem($font-size);
+
+	@if $line-height==normal {
+		line-height: normal;
+	} @else {
+		line-height: $line-height / $font-size;
+	}
+
+}
+
+
+//transition
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}

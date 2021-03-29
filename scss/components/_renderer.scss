@@ -1,0 +1,15 @@
+.renderer{
+    &__list{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    &__item{
+        margin-left: 16px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        .icon{
+            margin-right: 8px;
+        }
+    }
+}
