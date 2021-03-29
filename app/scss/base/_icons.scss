@@ -1,6 +1,6 @@
 .icon{
     display: block;
-    background: url('../../img/icons/icons.svg')no-repeat 0 0;
+    background: url('../img/icons/icons.svg')no-repeat 0 0;
     &_arrow{
         width: 10px;
         height: 6px;
@@ -65,6 +65,8 @@
 .plus-icon{
     width: 20px;
     height: 20px;
+    display: block;
+    margin: 0 auto;
     position: relative;
     &:before,
     &:after{
